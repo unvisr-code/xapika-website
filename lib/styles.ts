@@ -2,16 +2,16 @@
  * Shared style utilities for consistent styling across components
  */
 
-// Form input styles
+// Form input styles - Enhanced with Teal focus
 export const formStyles = {
   input:
-    "w-full rounded-lg border border-[var(--color-gray-200)] bg-white px-4 py-3 text-[var(--color-gray-900)] placeholder:text-[var(--color-gray-400)] focus:border-[var(--color-secondary)] focus:ring-2 focus:ring-[var(--color-secondary)]/20 transition-all",
+    "w-full rounded-xl border-2 border-[var(--color-gray-200)] bg-[var(--color-gray-50)] px-4 py-4 text-[var(--color-gray-900)] placeholder:text-[var(--color-gray-400)] focus:border-[var(--color-accent)] focus:bg-white focus:ring-4 focus:ring-[var(--color-accent)]/10 transition-all duration-300",
   inputError:
     "border-[var(--color-error)] focus:border-[var(--color-error)] focus:ring-[var(--color-error)]/20",
-  label: "block text-sm font-medium text-[var(--color-gray-700)] mb-2",
-  errorMessage: "mt-1 text-sm text-[var(--color-error)]",
+  label: "block text-sm font-semibold text-[var(--color-gray-700)] mb-2",
+  errorMessage: "mt-2 text-sm text-[var(--color-error)] flex items-center gap-1",
   checkbox:
-    "h-5 w-5 rounded border-[var(--color-gray-300)] text-[var(--color-secondary)] focus:ring-[var(--color-secondary)]",
+    "h-5 w-5 rounded border-[var(--color-gray-300)] text-[var(--color-accent)] focus:ring-[var(--color-accent)]",
 } as const;
 
 // Helper to combine input classes with error state

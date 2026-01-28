@@ -6,13 +6,20 @@
   --color-primary: #0A1628;
   --color-primary-light: #1E3A5F;
   --color-secondary: #0066CC;
-  --color-accent: #FF6B35;
+
+  /* Accent - Teal (Siemens Style) */
+  --color-accent: #00BFA6;
+  --color-accent-light: #64FFDA;
+  --color-accent-dark: #00897B;
 
   /* Neutral */
   --color-white: #FFFFFF;
   --color-gray-50: #F5F7FA;
+  --color-gray-100: #F1F5F9;
+  --color-gray-200: #E2E8F0;
   --color-gray-400: #9CA3AF;
   --color-gray-500: #6B7280;
+  --color-gray-600: #4B5563;
   --color-gray-700: #374151;
   --color-gray-900: #111827;
 
@@ -36,7 +43,9 @@
   --color-navy: var(--color-primary);
   --color-navy-light: var(--color-primary-light);
   --color-blue: var(--color-secondary);
-  --color-coral: var(--color-accent);
+  --color-teal: var(--color-accent);
+  --color-teal-light: var(--color-accent-light);
+  --color-teal-dark: var(--color-accent-dark);
 
   /* Fonts - Neo-Grotesque */
   --font-sans: var(--font-hanken), "Pretendard Variable", Pretendard, system-ui, sans-serif;
@@ -356,4 +365,226 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* ===== Glassmorphism ===== */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.glass-dark {
+  background: rgba(10, 22, 40, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* ===== Enhanced Button Styles ===== */
+.btn-teal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 191, 166, 0.3);
+}
+
+.btn-teal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 191, 166, 0.4);
+}
+
+.btn-glass {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ===== Image Card with Overlay ===== */
+.image-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 40%,
+    rgba(10, 22, 40, 0.95) 100%
+  );
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
+.image-card:hover::before {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 30%,
+    rgba(10, 22, 40, 0.85) 100%
+  );
+}
+
+.image-card img {
+  transition: transform 0.7s ease;
+}
+
+.image-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== Mega Menu ===== */
+.mega-menu {
+  background: rgba(10, 22, 40, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===== Utility Bar ===== */
+.utility-bar {
+  background: rgba(10, 22, 40, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ===== Timeline Enhanced ===== */
+.timeline-line {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--color-accent) 10%,
+    var(--color-accent) 90%,
+    transparent 100%
+  );
+}
+
+.timeline-dot {
+  box-shadow: 0 0 0 4px var(--color-gray-50), 0 0 20px rgba(0, 191, 166, 0.3);
+}
+
+/* ===== Floating Label Input ===== */
+.floating-input {
+  position: relative;
+}
+
+.floating-input input,
+.floating-input textarea,
+.floating-input select {
+  padding-top: 1.25rem;
+}
+
+.floating-input label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: var(--color-gray-400);
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.floating-input input:focus ~ label,
+.floating-input input:not(:placeholder-shown) ~ label,
+.floating-input textarea:focus ~ label,
+.floating-input textarea:not(:placeholder-shown) ~ label,
+.floating-input select:focus ~ label,
+.floating-input select:valid ~ label {
+  top: 0.5rem;
+  transform: translateY(0);
+  font-size: 0.75rem;
+  color: var(--color-accent);
+}
+
+/* ===== Count Up Number ===== */
+.count-number {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum';
+}
+
+/* ===== Mobile Optimizations ===== */
+@media (max-width: 768px) {
+  /* Touch-friendly tap targets (min 44px) */
+  button,
+  a,
+  [role="button"] {
+    min-height: 44px;
+  }
+
+  /* Reduce motion on mobile for performance */
+  .image-card img {
+    transition: none;
+  }
+
+  .image-card:hover img {
+    transform: none;
+  }
+
+  /* Simplified shadows for mobile */
+  .shadow-xl,
+  .shadow-2xl {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Optimize backdrop blur for mobile */
+  .backdrop-blur-xl,
+  .backdrop-blur-lg {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+}
+
+/* ===== Performance Optimizations ===== */
+/* GPU acceleration for animated elements */
+.image-card,
+.card-hover {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Prevent layout shift from images */
+img {
+  content-visibility: auto;
+}
+
+/* Smooth font rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }

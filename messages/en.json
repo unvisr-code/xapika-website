@@ -14,7 +14,13 @@
       "subtitle": "Your trusted partner in railway vehicle maintenance and solutions",
       "tagline": "Railway Excellence Since 2020",
       "cta": "Get in Touch",
-      "ourServices": "Our Services"
+      "ourServices": "Our Services",
+      "stats": {
+        "years": "Years Experience",
+        "projects": "Projects Completed",
+        "countries": "Countries",
+        "satisfaction": "Client Satisfaction"
+      }
     },
     "services": {
       "title": "Our Services",

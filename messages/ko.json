@@ -14,7 +14,13 @@
       "subtitle": "철도차량 유지보수 및 솔루션의 신뢰할 수 있는 파트너",
       "tagline": "2020년부터 철도 기술의 우수성을 선도",
       "cta": "문의하기",
-      "ourServices": "서비스 보기"
+      "ourServices": "서비스 보기",
+      "stats": {
+        "years": "업력",
+        "projects": "완료 프로젝트",
+        "countries": "서비스 국가",
+        "satisfaction": "고객 만족도"
+      }
     },
     "services": {
       "title": "주요 서비스",
