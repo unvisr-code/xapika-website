@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "title": "하리카 - 철도차량 유지보수 솔루션",
+    "description": "철도차량 유지보수의 신뢰할 수 있는 파트너"
+  },
+  "nav": {
+    "about": "회사소개",
+    "services": "사업/서비스",
+    "contact": "문의"
+  },
+  "home": {
+    "hero": {
+      "title": "철도 기술의 우수성,\n글로벌 표준",
+      "subtitle": "철도차량 유지보수 및 솔루션의 신뢰할 수 있는 파트너",
+      "tagline": "2020년부터 철도 기술의 우수성을 선도",
+      "cta": "문의하기",
+      "ourServices": "서비스 보기"
+    },
+    "services": {
+      "title": "주요 서비스",
+      "subtitle": "글로벌 운영사를 위한 종합 철도 유지보수 솔루션",
+      "learnMore": "자세히 보기",
+      "items": {
+        "maintenance": {
+          "title": "철도차량 유지보수",
+          "description": "인증된 전문성으로 모든 유형의 철도차량에 대한 완전한 유지보수 서비스를 제공합니다"
+        },
+        "parts": {
+          "title": "부품 공급",
+          "description": "전 세계 철도차량을 위한 정품 및 인증 교체 부품을 공급합니다"
+        },
+        "consulting": {
+          "title": "기술 컨설팅",
+          "description": "철도 운영 및 유지보수 최적화를 위한 전문 컨설팅 서비스를 제공합니다"
+        },
+        "training": {
+          "title": "교육 훈련",
+          "description": "철도 유지보수 인력을 위한 전문 교육 프로그램을 운영합니다"
+        }
+      }
+    },
+    "about": {
+      "title": "하리카 소개",
+      "subtitle": "철도 유지보수의 미래를 선도합니다",
+      "description": "수십 년간의 철도 산업 경험을 바탕으로, 하리카는 전 세계 철도 운영사들의 신뢰받는 파트너로 자리매김했습니다. 우수성과 혁신에 대한 우리의 헌신이 모든 업무의 원동력입니다.",
+      "learnMore": "회사소개 더 보기",
+      "stats": {
+        "years": "업력",
+        "projects": "프로젝트 완료",
+        "countries": "서비스 국가",
+        "experts": "전문 엔지니어"
+      }
+    },
+    "partners": {
+      "title": "파트너사",
+      "subtitle": "전 세계 주요 철도 운영사들이 신뢰하는 파트너"
+    },
+    "cta": {
+      "title": "함께 일할 준비가 되셨나요?",
+      "subtitle": "철도 유지보수 요구사항을 지원할 수 있는 방법에 대해 논의하려면 오늘 연락주세요",
+      "button": "문의하기"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "회사소개",
+      "subtitle": "설립 이래 철도 기술의 우수성을 선도해왔습니다"
+    },
+    "overview": {
+      "title": "회사 개요",
+      "description": "하리카는 폴란드에 본사를 둔 선도적인 철도차량 유지보수 회사로, 유럽, 아시아, 중동 전역의 고객에게 서비스를 제공합니다. 우리의 사명은 철도 운영의 안전성, 신뢰성, 효율성을 보장하는 세계 최고 수준의 유지보수 솔루션을 제공하는 것입니다.",
+      "values": {
+        "title": "핵심 가치",
+        "safety": {
+          "title": "안전 최우선",
+          "description": "운영의 모든 측면에서 안전에 대한 타협 없는 헌신"
+        },
+        "quality": {
+          "title": "품질 우수성",
+          "description": "모든 서비스에서 최고 수준의 품질 제공"
+        },
+        "innovation": {
+          "title": "혁신",
+          "description": "방법과 기술의 지속적인 발전"
+        },
+        "partnership": {
+          "title": "파트너십",
+          "description": "고객 및 파트너와의 지속적인 관계 구축"
+        }
+      }
+    },
+    "history": {
+      "title": "연혁",
+      "subtitle": "성장과 우수성의 여정"
+    },
+    "vision": {
+      "title": "비전 및 미션",
+      "vision": {
+        "title": "비전",
+        "description": "업계 우수성의 기준을 세우는 철도차량 유지보수 분야의 글로벌 리더가 되는 것"
+      },
+      "mission": {
+        "title": "미션",
+        "description": "세계의 철도가 안전하고 효율적으로 운영되도록 혁신적이고 신뢰할 수 있으며 비용 효율적인 유지보수 솔루션을 제공하는 것"
+      }
+    },
+    "ceo": {
+      "title": "CEO 인사말",
+      "name": "얀 코발스키",
+      "position": "대표이사",
+      "message": "하리카에서 우리는 파트너십과 혁신의 힘을 믿습니다. 헌신적인 전문가로 구성된 우리 팀은 서비스하는 모든 철도차량이 최고 수준의 안전과 성능 기준을 충족하도록 끊임없이 노력합니다. 고객 및 파트너와 함께, 우리는 철도 교통의 미래를 만들어 가고 있습니다."
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "사업/서비스",
+      "subtitle": "철도 우수성을 위한 종합 솔루션"
+    },
+    "categories": {
+      "title": "서비스 분야",
+      "subtitle": "전문 서비스 범위를 살펴보세요"
+    },
+    "detail": {
+      "whatWeOffer": "제공 서비스",
+      "getQuote": "견적 문의"
+    },
+    "projects": {
+      "title": "프로젝트 실적",
+      "subtitle": "전문성과 성과의 쇼케이스"
+    },
+    "locations": {
+      "title": "사업장 위치",
+      "subtitle": "글로벌 네트워크, 현지 전문성"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "문의하기",
+      "subtitle": "철도 관련 요구사항을 도와드리겠습니다"
+    },
+    "form": {
+      "title": "메시지 보내기",
+      "name": "이름",
+      "namePlaceholder": "이름을 입력하세요",
+      "company": "회사명",
+      "companyPlaceholder": "회사명을 입력하세요",
+      "email": "이메일",
+      "emailPlaceholder": "your.email@company.com",
+      "phone": "전화번호",
+      "phonePlaceholder": "+82 10 1234 5678",
+      "type": "문의 유형",
+      "typePlaceholder": "문의 유형을 선택하세요",
+      "types": {
+        "general": "일반 문의",
+        "partnership": "파트너십",
+        "support": "기술 지원",
+        "other": "기타"
+      },
+      "message": "문의 내용",
+      "messagePlaceholder": "어떻게 도와드릴까요?",
+      "privacy": "개인정보 처리방침에 동의하며, 개인정보 처리에 동의합니다",
+      "submit": "메시지 보내기",
+      "sending": "전송 중...",
+      "success": "메시지가 성공적으로 전송되었습니다! 곧 연락드리겠습니다.",
+      "error": "메시지 전송에 실패했습니다. 다시 시도해 주세요."
+    },
+    "info": {
+      "title": "연락처 정보",
+      "address": "주소",
+      "phone": "전화",
+      "email": "이메일",
+      "hours": "영업 시간",
+      "hoursValue": "월요일 - 금요일: 오전 9:00 - 오후 6:00 (KST)"
+    },
+    "map": {
+      "title": "위치"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "회사",
+      "about": "회사소개",
+      "history": "연혁",
+      "team": "팀 소개"
+    },
+    "services": {
+      "title": "서비스",
+      "maintenance": "유지보수",
+      "parts": "부품 공급",
+      "consulting": "컨설팅",
+      "training": "교육 훈련"
+    },
+    "contact": {
+      "title": "연락처",
+      "address": "폴란드 바르샤바 Kolejowa 1, 00-001",
+      "phone": "+48 22 123 4567",
+      "email": "contact@xapika.com"
+    },
+    "legal": {
+      "privacy": "개인정보처리방침",
+      "terms": "이용약관"
+    },
+    "copyright": "© {year} 하리카. All rights reserved."
+  },
+  "cookie": {
+    "title": "쿠키 동의",
+    "description": "더 나은 브라우징 경험을 위해 쿠키를 사용합니다. 사이트를 계속 이용하시면 쿠키 사용에 동의하는 것으로 간주됩니다.",
+    "accept": "동의",
+    "decline": "거부",
+    "settings": "설정"
+  },
+  "common": {
+    "learnMore": "자세히 보기",
+    "contactUs": "문의하기",
+    "viewAll": "전체 보기",
+    "backToHome": "홈으로",
+    "loading": "로딩 중..."
+  },
+  "errors": {
+    "required": "필수 입력 항목입니다",
+    "email": "유효한 이메일 주소를 입력해주세요",
+    "minLength": "최소 {min}자 이상이어야 합니다",
+    "phone": "유효한 전화번호를 입력해주세요"
+  }
+}

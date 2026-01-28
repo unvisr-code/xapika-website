@@ -1,26 +1,359 @@
 @import "tailwindcss";
 
+/* ===== Xapika Brand Colors ===== */
 :root {
+  /* Primary */
+  --color-primary: #0A1628;
+  --color-primary-light: #1E3A5F;
+  --color-secondary: #0066CC;
+  --color-accent: #FF6B35;
+
+  /* Neutral */
+  --color-white: #FFFFFF;
+  --color-gray-50: #F5F7FA;
+  --color-gray-400: #9CA3AF;
+  --color-gray-500: #6B7280;
+  --color-gray-700: #374151;
+  --color-gray-900: #111827;
+
+  /* Semantic */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+
+  /* Background/Foreground */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #111827;
 }
 
 @theme inline {
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Brand Colors */
+  --color-navy: var(--color-primary);
+  --color-navy-light: var(--color-primary-light);
+  --color-blue: var(--color-secondary);
+  --color-coral: var(--color-accent);
+
+  /* Fonts - Neo-Grotesque */
+  --font-sans: var(--font-hanken), "Pretendard Variable", Pretendard, system-ui, sans-serif;
+
+  /* Typography Scale */
+  --text-display: clamp(3.5rem, 10vw, 7rem);
+  --text-h1: clamp(2.5rem, 6vw, 4.5rem);
+  --text-h2: clamp(2rem, 4vw, 3.5rem);
+  --text-h3: clamp(1.5rem, 3vw, 2.25rem);
+
+  /* Letter Spacing */
+  --tracking-tighter: -0.04em;
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.02em;
+
+  /* Custom Spacing */
+  --container-padding: 80px;
+  --container-padding-mobile: 20px;
+  --section-gap: 120px;
+  --section-gap-mobile: 60px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ===== Typography ===== */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+/* ===== Custom Utilities ===== */
+@layer utilities {
+  /* Container */
+  .container-custom {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1440px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  @media (min-width: 1024px) {
+    .container-custom {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+
+  /* Section Spacing */
+  .section-padding {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding-top: 7.5rem;
+      padding-bottom: 7.5rem;
+    }
+  }
+
+  /* Text Gradient */
+  .text-gradient {
+    background-image: linear-gradient(to right, var(--color-secondary), var(--color-accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  /* Card Hover Effect */
+  .card-hover {
+    transition: all 0.3s ease-out;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+}
+
+/* ===== Button Styles (Non-utility) ===== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  background-color: var(--color-secondary);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0052A3;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  color: var(--color-gray-700);
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn-ghost:hover {
+  background-color: var(--color-gray-50);
+}
+
+/* ===== Animation Keyframes ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Infinite Scroll Animation for Partners */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+/* ===== Selection ===== */
+::selection {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-50);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-400);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-500);
+}
+
+/* ===== Focus Styles ===== */
+*:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+/* ===== Bold Typography Styles ===== */
+.headline-display {
+  font-size: var(--text-display);
+  font-weight: 800;
+  letter-spacing: var(--tracking-tighter);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.headline-h1 {
+  font-size: var(--text-h1);
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  line-height: 1.1;
+}
+
+.headline-h2 {
+  font-size: var(--text-h2);
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  line-height: 1.15;
+}
+
+.headline-h3 {
+  font-size: var(--text-h3);
+  font-weight: 600;
+  letter-spacing: var(--tracking-tight);
+  line-height: 1.2;
+}
+
+/* ===== Background Textures ===== */
+.texture-dots {
+  background-image: radial-gradient(circle, var(--color-gray-400) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.3;
+}
+
+.texture-grid {
+  background-image:
+    linear-gradient(to right, var(--color-gray-200) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-gray-200) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.texture-diagonal {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 40px,
+    var(--color-secondary) 40px,
+    var(--color-secondary) 41px
+  );
+  opacity: 0.05;
+}
+
+.texture-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+}
+
+.gradient-mesh {
+  background:
+    radial-gradient(at 0% 0%, rgba(0, 102, 204, 0.15) 0%, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(255, 107, 53, 0.1) 0%, transparent 50%);
+}
+
+/* ===== Hero Overlay ===== */
+.hero-overlay-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(10, 22, 40, 0.92) 0%,
+    rgba(10, 22, 40, 0.75) 40%,
+    rgba(0, 102, 204, 0.25) 80%,
+    rgba(10, 22, 40, 0.85) 100%
+  );
+}
+
+/* ===== Text Reveal Animation ===== */
+.text-reveal-container {
+  overflow: hidden;
+  display: block;
+}
+
+/* ===== Reduced Motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

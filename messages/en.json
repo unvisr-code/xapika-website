@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "title": "Xapika - Railway Vehicle Maintenance Solutions",
+    "description": "Your trusted partner in railway vehicle maintenance"
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Railway Excellence,\nGlobal Standards",
+      "subtitle": "Your trusted partner in railway vehicle maintenance and solutions",
+      "tagline": "Railway Excellence Since 2020",
+      "cta": "Get in Touch",
+      "ourServices": "Our Services"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive railway maintenance solutions for global operators",
+      "learnMore": "Learn More",
+      "items": {
+        "maintenance": {
+          "title": "Railway Vehicle Maintenance",
+          "description": "Complete maintenance services for all types of railway vehicles with certified expertise"
+        },
+        "parts": {
+          "title": "Parts Supply",
+          "description": "Original and certified replacement parts for railway vehicles worldwide"
+        },
+        "consulting": {
+          "title": "Technical Consulting",
+          "description": "Expert consulting services for railway operations and maintenance optimization"
+        },
+        "training": {
+          "title": "Training & Education",
+          "description": "Professional training programs for railway maintenance personnel"
+        }
+      }
+    },
+    "about": {
+      "title": "About Xapika",
+      "subtitle": "Leading the future of railway maintenance",
+      "description": "With decades of experience in the railway industry, Xapika has established itself as a trusted partner for railway operators worldwide. Our commitment to excellence and innovation drives everything we do.",
+      "learnMore": "Learn More About Us",
+      "stats": {
+        "years": "Years of Experience",
+        "projects": "Projects Completed",
+        "countries": "Countries Served",
+        "experts": "Expert Engineers"
+      }
+    },
+    "partners": {
+      "title": "Our Partners",
+      "subtitle": "Trusted by leading railway operators worldwide"
+    },
+    "cta": {
+      "title": "Ready to Work Together?",
+      "subtitle": "Contact us today to discuss how we can support your railway maintenance needs",
+      "button": "Contact Us"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Pioneering railway excellence since our foundation"
+    },
+    "overview": {
+      "title": "Company Overview",
+      "description": "Xapika is a leading railway vehicle maintenance company headquartered in Poland, serving clients across Europe, Asia, and the Middle East. Our mission is to provide world-class maintenance solutions that ensure the safety, reliability, and efficiency of railway operations.",
+      "values": {
+        "title": "Our Core Values",
+        "safety": {
+          "title": "Safety First",
+          "description": "Uncompromising commitment to safety in every aspect of our operations"
+        },
+        "quality": {
+          "title": "Quality Excellence",
+          "description": "Delivering the highest standards of quality in all our services"
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "Continuously advancing our methods and technologies"
+        },
+        "partnership": {
+          "title": "Partnership",
+          "description": "Building lasting relationships with our clients and partners"
+        }
+      }
+    },
+    "history": {
+      "title": "Our History",
+      "subtitle": "A journey of growth and excellence"
+    },
+    "vision": {
+      "title": "Vision & Mission",
+      "vision": {
+        "title": "Our Vision",
+        "description": "To be the global leader in railway vehicle maintenance, setting the standard for excellence in the industry"
+      },
+      "mission": {
+        "title": "Our Mission",
+        "description": "To provide innovative, reliable, and cost-effective maintenance solutions that keep the world's railways running safely and efficiently"
+      }
+    },
+    "ceo": {
+      "title": "Message from CEO",
+      "name": "Jan Kowalski",
+      "position": "Chief Executive Officer",
+      "message": "At Xapika, we believe in the power of partnership and innovation. Our team of dedicated professionals works tirelessly to ensure that every railway vehicle we service meets the highest standards of safety and performance. Together with our clients and partners, we are shaping the future of railway transportation."
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive solutions for railway excellence"
+    },
+    "categories": {
+      "title": "Service Categories",
+      "subtitle": "Explore our range of specialized services"
+    },
+    "detail": {
+      "whatWeOffer": "What We Offer",
+      "getQuote": "Get a Quote"
+    },
+    "projects": {
+      "title": "Past Projects",
+      "subtitle": "A showcase of our expertise and achievements"
+    },
+    "locations": {
+      "title": "Our Locations",
+      "subtitle": "Global presence, local expertise"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "We're here to help with your railway needs"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "company": "Company",
+      "companyPlaceholder": "Your company name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@company.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+1 234 567 890",
+      "type": "Inquiry Type",
+      "typePlaceholder": "Select inquiry type",
+      "types": {
+        "general": "General Inquiry",
+        "partnership": "Partnership",
+        "support": "Technical Support",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messagePlaceholder": "How can we help you?",
+      "privacy": "I agree to the privacy policy and consent to the processing of my personal data",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! We will get back to you soon.",
+      "error": "Failed to send message. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business Hours",
+      "hoursValue": "Monday - Friday: 9:00 AM - 6:00 PM (CET)"
+    },
+    "map": {
+      "title": "Our Location"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "history": "Our History",
+      "team": "Our Team"
+    },
+    "services": {
+      "title": "Services",
+      "maintenance": "Maintenance",
+      "parts": "Parts Supply",
+      "consulting": "Consulting",
+      "training": "Training"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "ul. Kolejowa 1, 00-001 Warsaw, Poland",
+      "phone": "+48 22 123 4567",
+      "email": "contact@xapika.com"
+    },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "copyright": "© {year} Xapika. All rights reserved."
+  },
+  "cookie": {
+    "title": "Cookie Consent",
+    "description": "We use cookies to enhance your browsing experience. By continuing to use our site, you consent to our use of cookies.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "settings": "Settings"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "viewAll": "View All",
+    "backToHome": "Back to Home",
+    "loading": "Loading..."
+  },
+  "errors": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "minLength": "Must be at least {min} characters",
+    "phone": "Please enter a valid phone number"
+  }
+}
