@@ -7,12 +7,20 @@ PRD 기반 남은 작업 목록입니다. 우선순위별로 정리되어 있습
 ## High Priority (필수 기능)
 
 ### 1. Assets & Media
-- [ ] Hero 배경 영상 추가 (`public/videos/hero-bg.mp4`)
+- [x] Hero 배경 영상 추가 (`public/videos/hero-bg.mp4`)
 - [ ] Hero 포스터 이미지 추가 (`public/images/hero-poster.jpg`)
 - [ ] Open Graph 이미지 추가 (`public/images/og-image.jpg` - 1200x630)
 - [ ] 파트너사 로고 이미지 추가 (`public/images/partners/`)
-- [ ] About 페이지 이미지 (CEO, 회사 등)
+- [ ] About 페이지 이미지
+  - [ ] Vision 섹션 배경 (`public/images/about/vision.jpg`)
+  - [ ] Mission 섹션 배경 (`public/images/about/mission.jpg`)
+  - [ ] CEO 프로필 사진 (`public/images/about/ceo-photo.jpg`)
 - [ ] Services 페이지 이미지
+  - [ ] 정비 서비스 (`public/images/services/maintenance.jpg`)
+  - [ ] 부품 서비스 (`public/images/services/parts.jpg`)
+  - [ ] 컨설팅 서비스 (`public/images/services/consulting.jpg`)
+  - [ ] 교육 서비스 (`public/images/services/training.jpg`)
+- **이미지 생성 프롬프트**: `MIDJOURNEY_PROMPTS.md` 참고
 
 ### 2. Environment Variables
 - [ ] Resend API 키 설정 (`RESEND_API_KEY`)
@@ -74,8 +82,8 @@ PRD 기반 남은 작업 목록입니다. 우선순위별로 정리되어 있습
 ## Technical Improvements (코드 품질)
 
 ### 9. Refactoring
+- [x] Form input 클래스 유틸리티로 추출 (`lib/styles.ts`)
 - [ ] `Button.tsx`: 사용하지 않는 `as` 변수 제거
-- [ ] Form input 클래스 유틸리티로 추출 (`lib/styles.ts`)
 - [ ] 애니메이션 variants 공통화 (`lib/animations.ts`)
 
 ### 10. Testing
@@ -128,15 +136,19 @@ PRD 기반 남은 작업 목록입니다. 우선순위별로 정리되어 있습
 - [x] Cookie Banner
 - [x] SEO 기본 설정 (sitemap.xml, robots.txt)
 - [x] 보안 헤더 설정
+- [x] Hero 배경 영상 (`public/videos/hero-bg.mp4`)
+- [x] Form 스타일 유틸리티 추출 (`lib/styles.ts`)
+- [x] Midjourney 이미지 프롬프트 정리 (`MIDJOURNEY_PROMPTS.md`)
 
 ---
 
 ## Notes
 
 - PRD 문서: `PRD_Xapika_Website.md`
+- 이미지 프롬프트: `MIDJOURNEY_PROMPTS.md`
 - 디자인 참고: Stadler Rail, Siemens Mobility, Rotem SRS
 - 기술 스택: Next.js 16 + TypeScript + Tailwind CSS 4 + Framer Motion
 
 ---
 
-*Last updated: 2026-01-28*
+*Last updated: 2026-01-29*
